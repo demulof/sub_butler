@@ -1,0 +1,29 @@
+name: sub_butler
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  english_words: ^4.0.0
+  provider: ^6.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: NotoSansTC
+      fonts:
+        - asset: assets/fonts/NotoSansTC-Regular.ttf
+        - asset: assets/fonts/NotoSansTC-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/NotoSansTC-Bold.ttf
+          weight: 700
