@@ -32,24 +32,36 @@ class PaySoonCard extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             child: Column(
               children: [
-                Container(width: 32, height: 32, color: AppColors.urgentText),
-                SizedBox(width: 12),
-                Column(
+                Row(
                   children: [
-                    Text(
-                      'Netflix',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.textDark,
-                      ),
+                    Container(
+                      width: 32,
+                      height: 32,
+                      color: AppColors.urgentText,
                     ),
-                    Text(
-                      'NT\$ 390',
-                      style: TextStyle(fontSize: 14, color: AppColors.textGray),
+                    SizedBox(width: 12),
+                    Column(
+                      children: [
+                        Text(
+                          'Netflix',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.textDark,
+                          ),
+                        ),
+                        Text(
+                          'NT\$ 390',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: AppColors.textGray,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
+                SizedBox(height: 12),
                 Container(
                   width: double.infinity,
                   color: AppColors.urgentBackground,
